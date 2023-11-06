@@ -1,9 +1,9 @@
 <?php
 // Database credentials
-$servername = "sql302.infinityfree.com";
-$username = "if0_35370547";
-$password = "A6qiksuSCFHD";
-$dbname = "if0_35370547_my_passwords";
+$servername = "sql.freedb.tech";
+$username = "freedb_studioatlanta";
+$password = "@2WytgZ!jM$PG2!";
+$dbname = "freedb_my_passwords";
 
 // Create a new MySQLi instance
 $conn = new mysqli($servername, $username, $password, $dbname);
