@@ -2,11 +2,12 @@
 // Database credentials
 $servername = "db4free.net";
 $username = "studioatlanta";
+$port    = "3306";
 $password = "b998fc7c";
 $dbname = "studioatlanta";
 
 // Create a new MySQLi instance
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check the connection
 if ($conn->connect_error) {
