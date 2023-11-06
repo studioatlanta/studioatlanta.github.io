@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ88TGSZEE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZ88TGSZEE');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrong Password</title>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@mui/material@5.2.5/dist/material.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Patrick Hand SC', cursive;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your blurred background image URL */
+      background-size: cover;
+      background-position: center;
+    }
+
+    #blur-container {
+      background: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    #container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #f44336;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mui-btn {
+      font-size: 1.5rem;
+      padding: 20px 40px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .mui-btn.mui-btn--primary {
+      background-color: #1976D2;
+      color: #fff;
+    }
+
+    .mui-btn.mui-btn--secondary {
+      background-color: #f46536;
+      color: #fff;
+    }
+
+    .mui-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .mui-link {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+  <div id="blur-container">
+    <div id="container">
+      <h1>The Password You entered is incorrect</h1>
+      <div class="button-container">
+        <a id="goBack" class="mui-btn mui-btn--secondary" data-delay="3000" href="index.html">Go Back to Home</a>
+
+        <a id="contactAdmin" class="mui-link" href="contact.html">Contact Admin to ask for access</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.2.5/dist/material.min.js"></script>
+  <script>
+    // Handle button clicks
+    const buttons = document.querySelectorAll('.mui-btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const delay = parseInt(button.getAttribute('data-delay'));
+        setTimeout(() => {
+          alert(button.innerText);
+        }, delay);
+      });
+    });
+  </script>
+
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/653ab8e6f2439e1631e8cd07/1hdmm4iee';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
+</body>
+</html>

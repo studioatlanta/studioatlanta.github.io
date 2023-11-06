@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>studio Atlanta</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap1.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
+    <link href="css/style1.css" rel="stylesheet">
+
+
+    <!-- link for new testimonial -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- link for new testimonial -->
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- my cool navbar start here -->
+
+
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">Home</a></li>
+
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=HbsvX2YXKNM" target="_blank">
+                                            <i class="fab fa-youtube" style="color: red;"></i> Meet Us
+                                        </a>
+                                        
+                                    </li>
+                                    <li><a href="./gallery.html">wedding shots</a></li>
+                                    <!-- <li><a href="./models.html">Models</a></li> -->
+
+
+                                    <li>
+                                    <li><a href="#" onclick="openPasswordPopup()">Models</a></li>
+                                    </li>
+
+                                    <!-- Password popup -->
+                                    <div id="passwordPopup" class="password-popup" style="display: none;">
+                                        <div class="password-popup-content">
+                                            <span class="close-popup" onclick="closePasswordPopup()">&times;</span>
+                                            <h2>Please Enter Password To Proceed</h2>
+                                            <!-- Form for entering the password and submitting to submit.php -->
+                                            <form action="submit.php" method="post">
+                                                <!-- <input type="password" name="password" placeholder="Password"> -->
+                                                <input type="password" name="password" placeholder="Password"
+                                                    style="width: 90%; height: 60px;">
+                                                <br>
+                                                <br>
+
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                            <br>
+                                            <h5>This Page is Password Protected, Contact the Admin to get access</h5>
+                                        </div>
+                                    </div>
+
+
+
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li class="active"><a href="./packages.html">packages</a></li>
+
+
+                                    <li><a href="#"> More</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./senior.html">- Senior's Portraits</a></li>
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- wedding shots</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="models.html">- Models</a></li>
+                                            <li><a href="https://www.youtube.com/@studioatlanta">- Youtube Channel</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- my cool navbar end here -->
+
+
+
+
+
+
+
+
+    <!-- Header Start  -->
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">Wedding Packages</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+                            <li class="breadcrumb-item active" aria-current="page">Wedding Packages</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white p-3 w-100" src="img/bg-img/37a.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white p-3 w-100" src="img/bg-img/115a.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header End -->
+
+
+
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Why Us</p>
+                <h1 class="display-6 mb-4">Because We Provide Best Professional Services</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/bg-img/111.png" alt="">
+                            <div class="service-overlay">
+                                <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>wedding</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/senior/drb11_ppw.jpeg" alt="">
+                            <div class="service-overlay">
+                                <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Portraits</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/senior/model.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Fashion</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/senior/Compressed/1.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Senior's Portrait</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+
+
+
+    <!-- Blog Area Start -->
+    <div class="alime-blog-area section-padding-80-0 mb-70">
+        <div class="container">
+            <div class="row">
+
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="100ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/profile/wedding1.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">$ 999</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+
+                            <a href="#" class="post-title">WEDDING MINI</a>
+                            <div class="post-meta">
+                                <a href="#">  </a>
+                                <br>
+                                <a href="#">- 3 Hour Photography</a>
+                                <br>
+                                <a href="#">- Online proofs</a>
+                                <br>
+                                <a href="#">- 1 11x14</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="400ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/profile/wedding2.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">$ 1899</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+
+                            <a href="#" class="post-title">STANDARD WEDDING</a>
+                            <div class="post-meta">
+                                <a href="#">  </a>
+                                <br>
+                                <a href="#">- 6 Hours Photography</a>
+                                <br>
+                                <a href="#">- Online proofs</a>
+                                <br>
+                                <a href="#">- 1 11x14</a>
+                                <br>
+                                <a href="#">- Proof Box with 24 4x5's</a>
+                                <br>
+                                
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="700ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/profile/wedding3.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">$ 3699</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+
+                            <a href="#" class="post-title">DELUXE WEDDING</a>
+                            <div class="post-meta">
+                                <a href="#"> </a>
+                                <br>
+                                <a href="#">- 8-10 Hours Photography</a>
+                                <br>
+                                <a href="#">- Online proofs 30% reg. Prices</a>
+                                <br>
+                                <a href="#">- Bridal Portraits 16x20</a>
+                                <br>
+                                <a href="#">- 24 Page Custom Wedding Album</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Blog Area End -->
+
+    <!-- my cool testimonial -->
+
+    
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="img/profile/avatar.jpg" class="img-circle img-responsive" />
+                            <p style="font-size: 90%;">For 30+ years I have had the pleasure of using Daniel and Denise for a variety of things. You guys are great at your trade but even better people! We love you guys!
+                                Troy Shaw
+                                 </p>
+                            <h4 style="font-size: 90%;">Troy Shaw, VP Cross Country Adjusting</h4>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/profile/avatar.jpg" class="img-circle img-responsive" />
+                            <p style="font-size: 90%;">Well I met Daniel & Denise Martin over 30 years ago at Church.. Since that time Daniel has done pictures for us many times including coming to the hospital to take pictures of my first born. He has done more of my family members weddings than I can even remember and the thing is they call me about him.. It is not like I am a sales rep. He did pictures of my children growing up, for my companies website, ballgames and even photos of items I was selling for me. Denise his wife is just a saint.. She is so positive and sweet and certainly keeps everything organized especially with weddings. They really do very good work and are great people as well. I would imagine when the time comes he will be doing my son’s weddings and taking pictures of my grandkids. Love them both.</p>
+                            <h4 style="font-size: 90%;">Keith Carroll, 
+                                President, 
+                                KC Transportation solutions
+                                </h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/profile/avatar.jpg" class="img-circle img-responsive" />
+                            <p style="font-size: 90%;">I would like to express the upmost highest regards for Daniel Martin & Denise with Studio Atlanta. They are the most dynamic team I’ve ever encountered.
+                                Daniel has spent many, many hours with myself and my daughter. He bends over backwards, aims to please, very
+                                compassionate and works super hard to ensure he meets all expectations in which he actually more than excels all expectations. He is extremely professional, unbelievably knowledgeable, super kind & beyond dependable.
+                                He has taken pictures of myself and on many occasions of my daughter. He truly aims to please and works harder than any photographer I’ve ever experienced. His customer service is beyond superb.
+                                Denise is outstanding with all her techniques, cosmetology and her photography knowledge as well.
+                                There’s not a better trustworthy, professional and knowledgeable team.
+                                I provide ratings higher than a 10.
+                                 </p>
+                            <h4 style="font-size: 90%;" >Kindest Regards,
+                                Shantyl Stevens
+                                </h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!-- my cool testimonial -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Order Now</p>
+                <h1 class="display-6 mb-5">Why wait, Please Contact Us to know more about our booking and plannings.
+                </h1>
+            </div>
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+
+
+
+
+
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdnQ8aPgaiKjTQZTW66AappeLr3nkuNaW7dvmgWl9QAZdy8NQ/viewform?embedded=true"
+                        width="100%" height="1800px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+
+
+                    <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working
+                        contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code
+                        and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                    <!-- <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 200px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+
+                        <div class="copywrite-text">
+                            <p><!-- This is Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <!-- this is just here to prevent the website from copywrite issues -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- my cool footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Studio Atlanta, Ga.</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            studioatlanta@yahoo.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 404.409.8740</p>
+
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Pages
+                        </h6>
+                        <p>
+                            <a href="gallery.html" class="text-reset">Weddings</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About US</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact Us</a>
+                        </p>
+
+
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Homepage</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/@studioatlanta/" class="text-reset">Youtube Channel </a>
+                        </p>
+                        <p>
+                            <a href="mailto:studioatlanta@yahoo.com" class="text-reset">Email US </a>
+                        </p>
+                        <p>
+                            <a href="packages.html" class="text-reset">Packages </a>
+                        </p>
+
+                    </div>
+
+                    <!-- contact Card -->
+                    <div class="contact-card">
+                        <div class="contact-header" style="margin-left: 0px; margin-right: 10% ; ">
+                            <i class="fas fa-laptop-code" style="font-size: 98%;"></i>
+                            <h4 style="font-size: 80%;" class="contact-title">Developed By <a href="https://vineet201.github.io/services" target="_blank" style="color: rgb(60, 0, 128);">Vineet Sinha</a> <h4>
+
+                        </div>
+                        <ul class="contact-points">
+                            <li>✧ Want an Awesome Website?</li>
+                            <li>✧ And at an Affordable Price?</li>
+                            <li>✧ Looking for Professional work?</li>
+                           
+                        </ul>
+                        <p class="contact-description">
+                            Your dream website, just a click away, Contact to get a free demo.
+                        </p>
+                        <a href="https://vineet201.github.io/services" target="_blank" class="contact-button" style="font-family: cursive;">know more>></a>
+                    </div>
+                </div>
+                <!-- contact Card -->
+            </div>
+        </section>
+
+
+        <!-- Copyright -->
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> ©
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Studio Atlanta
+        </div>
+
+        <div class="my_copyright">
+
+        </div>
+
+    </footer>
+    <!-- my cool footer -->
+
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a> -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/653ab8e6f2439e1631e8cd07/1hdmm4iee';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+
+
+</body>
+
+</html>

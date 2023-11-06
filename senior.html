@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Studio Atlantae</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i
+                                class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control"
+                                placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">Home</a></li>
+
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=HbsvX2YXKNM" target="_blank">
+                                            <i class="fab fa-youtube" style="color: red;"></i> Meet Us
+                                        </a>
+                                        
+                                    </li>
+                                    <li><a href="./gallery.html">wedding shots</a></li>
+                                    <!-- <li><a href="./models.html">Models</a></li> -->
+
+
+
+                                    <!-- <li><a href="#" onclick="openPasswordPopup()">Models</a></li> -->
+                                    <!-- div for model  password popup start here -->
+                                    <!-- <div id="passwordPopup" class="password-popup">
+                                        <div class="password-popup-content">
+                                            <span class="close-popup" onclick="closePasswordPopup()">&times;</span>
+                                            <h2>Please Enter Password To Proceed</h2>
+                                            <form action="submit.php" method="post" onsubmit="return validateForm()"></form>
+                                            
+                                            <input type="password" id="passwordInput" placeholder="Password">
+                                            <button onclick="checkPassword()">Submit</button>
+                                            <br>
+                                        
+                                            <h5>This Page is Password Protected, Contact the Admin to get access</h5>
+                                        </div>
+                                    </div>                                     -->
+                                    <!-- div for modeo password popup end here -->
+
+                                    <li>
+                                    <li><a href="#" onclick="openPasswordPopup()">Models</a></li>
+                                    </li>
+
+                                    <!-- Password popup -->
+                                    <div id="passwordPopup" class="password-popup" style="display: none;">
+                                        <div class="password-popup-content">
+                                            <span class="close-popup" onclick="closePasswordPopup()">&times;</span>
+                                            <h2>Please Enter Password To Proceed</h2>
+                                            <!-- Form for entering the password and submitting to submit.php -->
+                                            <form action="submit.php" method="post">
+                                                <!-- <input type="password" name="password" placeholder="Password"> -->
+                                                <input type="password" name="password" placeholder="Password"
+                                                    style="width: 90%; height: 60px;">
+                                                <br>
+                                                <br>
+
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                            <br>
+                                            <h5>This Page is Password Protected, Contact the Admin to get access</h5>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 
+
+                                    <li><a href="#" onclick="openPasswordPopup()">Models</a></li>
+                                    <div id="passwordPopup" class="password-popup">
+                                        <div class="password-popup-content">
+                                            <span class="close-popup" onclick="closePasswordPopup()">&times;</span>
+                                            <h2>Please Enter Password To Proceed</h2>
+                                            <form action="submit.php" method="post">
+                                                <input type="password" name="password" placeholder="Password">
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                            <br>
+                                            <h5>This Page is Password Protected, Contact the Admin to get access</h5>
+                                        </div>
+                                    </div> -->
+
+
+
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./packages.html">packages</a></li>
+
+                                    <li><a href="#"> More</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./senior.html">- Senior's Portraits</a></li>
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- wedding shots</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="models.html">- Models</a></li>
+                                            <li><a href="https://www.youtube.com/@studioatlanta">- Youtube Channel</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax"
+        style="background-image: url(img/senior/Compressed/banner.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Senior's Portraits</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">More</li>
+                                <li class="breadcrumb-item active" aria-current="page">Senior's Portraits</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Projects Menu -->
+                    <!-- <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                        <div class="portfolio-menu text-center">
+                            <button class="btn active" data-filter="*">All</button>
+                            <button class="btn" data-filter=".human">Couple</button>
+                            <button class="btn" data-filter=".nature">Single</button>
+                            <button class="btn" data-filter=".country">With kids</button>
+                            <button class="btn" data-filter=".video">Senior Portrait</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row alime-portfolio"> -->
+
+                    <!-- my div start -->
+                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                        <div class="portfolio-menu text-center">
+                            <!-- <button class="btn active">Here are all of the photos</button> -->
+                            <h2 class="display-6 mb-4">These are some of the Pictures</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- my div close -->
+
+            <div class="row alime-portfolio">
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/1.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/1.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/2.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/2.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/3.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/3.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+
+
+
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/4.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/4.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/5.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/5.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/6.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/6.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/compressed/7.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/7.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                    <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                        data-wow-delay="500ms">
+                        <div class="single-portfolio-content">
+                            <img src="img/senior/compressed/8.JPG" alt="">
+                            <div class="hover-content">
+                                <a href="img/senior/8.JPG" class="portfolio-img">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/9.jpeg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/9.jpeg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/10.jpeg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/10.jpeg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/11.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/11.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/12.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/12.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/13.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/13.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/14.jpeg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/14.jpeg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!-- Single Gallery Item -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/senior/15.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/senior/15.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+
+
+
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Gallery Area End -->
+
+    <!-- Follow Area Start -->
+    <!-- <div class="follow-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Follow Instagram</h2>
+                        <p>@Daniel's instagramr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Instagram Feed Area -->
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+
+                        <div class="copywrite-text">
+                            <p><!-- This is Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <!-- this is just here to prevent the website from copywrite issues -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </p>
+                        </div>
+                
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- my cool footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Studio Atlanta, Ga.</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            studioatlanta@yahoo.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 404.409.8740</p>
+
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Pages
+                        </h6>
+                        <p>
+                            <a href="gallery.html" class="text-reset">wedding shots</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About US</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact Us</a>
+                        </p>
+
+
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Homepage</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/@studioatlanta/" class="text-reset">Youtube Channel </a>
+                        </p>
+                        <p>
+                            <a href="mailto:studioatlanta@yahoo.com" class="text-reset">Email US </a>
+                        </p>
+                        <p>
+                            <a href="packages.html" class="text-reset">Packages </a>
+                        </p>
+
+                    </div>
+
+                    <!-- contact Card -->
+                    <div class="contact-card">
+                        <div class="contact-header" style="margin-left: 0px; margin-right: 10% ; ">
+                            <i class="fas fa-laptop-code" style="font-size: 98%;"></i>
+                            <h4 style="font-size: 80%;" class="contact-title">Developed By <a href="https://vineet201.github.io/services" target="_blank" style="color: rgb(60, 0, 128);">Vineet Sinha</a> <h4>
+
+                        </div>
+                        <ul class="contact-points">
+                            <li>✧ Want an Awesome Website?</li>
+                            <li>✧ And at an Affordable Price?</li>
+                            <li>✧ Looking for Professional work?</li>
+                           
+                        </ul>
+                        <p class="contact-description">
+                            Your dream website, just a click away, Contact to get a free demo.
+                        </p>
+                        <a href="https://vineet201.github.io/services" target="_blank" class="contact-button" style="font-family: cursive;">know more>></a>
+                    </div>
+                </div>
+
+                <!-- contact Card -->
+            </div>
+        </section>
+
+
+        <!-- Copyright -->
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> ©
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Studio Atlanta
+        </div>
+
+    
+
+    </footer>
+    <!-- my cool footer -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/653ab8e6f2439e1631e8cd07/1hdmm4iee';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+</body>
+
+</html>
