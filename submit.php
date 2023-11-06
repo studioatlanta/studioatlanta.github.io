@@ -1,13 +1,12 @@
 <?php
 // Database credentials
-$servername = "sql.freedb.tech";
-$port = 3306; // Port number
-$username = "freedb_studioatlanta";
-$password = "@2WytgZ!jM$PG2!";
-$dbname = "freedb_my_passwords";
+$servername = "db4free.net";
+$username = "studioatlanta";
+$password = "b998fc7c";
+$dbname = "studioatlanta";
 
 // Create a new MySQLi instance
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check the connection
 if ($conn->connect_error) {
@@ -29,11 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Passwords match, redirect to models.html
             header("Location: models.html");
             exit;
-        } else {
-            // Incorrect password, redirect to error.html
-            header("Location: error.html");
-            exit; // Make sure to exit to prevent further script execution
-        }
+      } else {
+    // Incorrect password, redirect to error.html
+    header("Location: error.html");
+    exit; // Make sure to exit to prevent further script execution
+}
+
     } else {
         // Password not found in the database, handle this case accordingly
         echo "Password not found in the database.";
